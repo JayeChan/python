@@ -1,0 +1,18 @@
+1、文件操作
+    模特主妇护士老师.txt
+    1、文件路径：e:\模特主妇护士老师.txt
+    2、编码方式:utf-8  gbk  ascii  unicode
+    3、操作权限：只读、只写、追加、写读、读写
+        以什么编码方式存储，就需要用什么方式读取
+
+     只读：r、rb
+     # f = open('模特主妇护士老师.txt',mode='r',encoding='utf-8')   #open中有一步将read转化为str格式了
+     # content = f.read()
+     print(content,type(content))
+     # print(f)
+     # f.close()
+     #图片等是用 rb 转换为bayes类型
+     # f = open('模特主妇护士老师.txt',mode='rb')
+     # content = f.read()
+     # print(content)
+     # f.close()

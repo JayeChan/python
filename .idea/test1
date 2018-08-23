@@ -1,0 +1,75 @@
+#s = 'a'
+#print(s.isspace())
+'''list:
+'''
+#lis = [11,22,33,44,55]
+#for i in [1,2]:
+#    lis.pop(i)
+#print(lis)
+
+#day7 集合及深浅
+# '''
+# 集合是可变的数据类型，但其中的元素必须是不可变数据类型，无序、不重复（面试题去重）
+# { }
+# '''
+
+# set1 = set({1,2,3})
+# set2 = {1,2,3,(1,2,3)}
+# print(set1,set2)
+
+set1 = {'alex','wusir','ritina','egon','barry'}
+# #增
+
+# #add
+# set1.add('女神')
+# print(set1)
+
+# #update 一个一个元素添加
+# set1.update('男神')
+# print(set1)
+
+
+# #删除
+# #随机删除pop，有返回值
+# set1.pop()
+# print(set1)
+
+# #按元素删除
+# set1.remove('神')
+# print(set1)
+
+#clear 清空
+# set1.clear()
+# print(set1)
+
+# del 删除
+# del set1
+# print(set1)
+
+#查
+# for i in set1:
+#     print(i)
+
+# """集合的特殊性质,交并补"""
+# set1 = {1,2,3,4,5}
+# set2 = {1,5,7,9,10}
+# set3 = set1&set2   #也可以set1.intersection(set2)
+# set4 = set1|set2   #也可以用set1.union(set2)
+# set5 = set1^set2   #set1.symmetric_difference(set2)
+# set6 = set1 - set2 #set1.difference(set2)
+# set7 = set1 < set2 #set1.issubset(set2)
+# set8 = set1 > set2 #set1.issuperset(set2)
+# print(set3,set4,set5,set6,set7,set8)
+
+# 去重
+# li = [1,2,33,33,2,1,4,5,6,6]
+# s1 = set(li)
+# li = list(s1)
+# print(li)
+
+# 变为不可变的集合 (只读)
+# s = frozenset('jaye')
+# print(s,type(s))
+# for i in s:
+#     print(i)
+

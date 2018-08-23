@@ -1,0 +1,49 @@
+列表生成器
+[x*2 for x in range(10)]
+
+生成器对象（generator object）
+    创建生成器的两种方式：
+        1 （x*2 for x in range(10)）
+        2 def f():
+            print('ok')
+            recv = yield 2
+            print ('ok')
+          f()>>>>>>>>generator object
+
+     生成器的方法
+        1 next(f())------------计算出一个值
+            注意：生成器在创建的时候已经决定了能计算出值的个数，调用
+            next的次数超过这个值会报错
+
+            便利所有元素可以通过for循环：
+                    for i in [1,2,3]:
+                        print (i)
+             for 循环内部做了2件事：
+                1调用对象的iter（）方法，返回一个迭代对象
+                2
+                while：
+                        try:
+                             i = next(list_Iterator)
+                        except StopIteration:
+                            break
+
+        2 send():
+            给yield前边的变量传参数
+            注：第一次send不能加参数（只能加None）
+               f().send(None)   等价于next（f（））
+迭代器：
+        满足迭代器协议：
+                1：内部有next（）方法
+                2：内部有iter（）方法
+
+         li = [1,2,3]:Iterable(内部有iter方法)
+         i = iter(li):list_Iterator
+
+time模块：
+        time.time()
+        time.strftime()
+        time.gmtime()
+        time.localtime()
+        time.ctime()
+random模块：
+    chr(65-90)
